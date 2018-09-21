@@ -47,21 +47,9 @@ app.get('/todos/:id',(req, res) => {
     }, (e) => {
         res.status(400).send(e);
     })
-    //     if (!todo){
-//         return console.log('Id not found');
-//     }
-//     console.log('Todo By Id', todo);
-// }).catch((e) => console.log(e));
-    // Todo.find().then((todos)=> {
-    //     res.send({todos})
-    // }, (e) => {
-    //     res.status(400).send(e);
-    // })
 });
 
-
-
-app.listen(3000,() => {
+app.listen(port,() => {
     console.log(`Started on port ${port}`);
 })
 
